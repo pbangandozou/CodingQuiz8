@@ -1,0 +1,19 @@
+Alternating Characters
+
+Time: The time complexity is 0(n) because n is the length of the input size
+
+Space: O(n) because where n is the length of the input string. Each recursive call adds a new frame to the stack. 
+
+Recursive Definition: The number of deletions is 0 if the string s is length one or less since there are no neighboring characters to compare (base case).
+  In the event that s is longer than 1:
+  In case the initial two characters of s are identical, add one to the number of deletions.
+  After that, call the remaining characters in the string recursively (not the first one).
+  The function keeps track of how many characters must be removed from the string in order for it to alternate. 
+  It counts one deletion if two consecutive characters are the same, then moves on to the next segment of the string. 
+  When the string's length is one or less, the recursion comes to an end.
+
+Staircase
+
+Time: The time complexity would be  O(n^2), where n is the input parameter, meaning the height of the staircase. There is an inner loop and outter loop each running constant time. 
+
+Space: The space complexity would be O(1) because the amount of memory used by the program does not scale with the input size 'n'. Also uses constant time to store Row and Col
